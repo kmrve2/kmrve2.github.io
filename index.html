@@ -1,1 +1,230 @@
-<p>good day lad</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Basic Blog</title>
+    <style>
+        /* --- Basic Reset --- */
+        body, h1, h2, h3, p, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* --- Global Styles --- */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* --- Container --- */
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* --- Header --- */
+        .main-header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 30px;
+            text-align: center;
+        }
+
+        .main-header h1 {
+            margin-bottom: 10px;
+        }
+
+        .main-nav ul {
+            list-style: none;
+        }
+
+        .main-nav li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .main-nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .main-nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- Content Layout (Flexbox) --- */
+        .content-wrapper {
+            display: flex;
+            padding: 30px;
+        }
+
+        /* --- Main Content (Blog Posts) --- */
+        .main-content {
+            flex: 3; /* Takes 3/4 of the space */
+            margin-right: 30px;
+        }
+
+        .blog-post {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .blog-post h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .post-meta {
+            font-size: 0.9em;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .blog-post p {
+            margin-bottom: 15px;
+        }
+
+        .read-more {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .read-more:hover {
+            background-color: #555;
+        }
+
+        /* --- Sidebar --- */
+        .sidebar {
+            flex: 1; /* Takes 1/4 of the space */
+        }
+
+        .sidebar-widget {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar-widget h3 {
+            margin-bottom: 15px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        .sidebar-widget ul {
+            list-style: none;
+        }
+
+        .sidebar-widget li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar-widget a {
+            text-decoration: none;
+            color: #337ab7;
+        }
+
+        .sidebar-widget a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- Footer --- */
+        .main-footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="main-header">
+            <h1>My Basic Blog</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content-wrapper">
+            <main class="main-content">
+                
+                <article class="blog-post">
+                    <h2>My First Blog Post</h2>
+                    <p class="post-meta">Posted by <strong>Admin</strong> on November 10, 2025</p>
+                    <p>This is the first post on my new blog. I'm using HTML and CSS to build this. It's a great way to learn web development fundamentals. This main area is for the content, and on the right, you can see a sidebar.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+
+                <article class="blog-post">
+                    <h2>Understanding HTML Structure</h2>
+                    <p class="post-meta">Posted by <strong>Admin</strong> on November 11, 2025</p>
+                    <p>HTML (HyperText Markup Language) provides the structure for a website. We use semantic tags like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, and <code>&lt;footer&gt;</code> to give meaning to our content. This is great for accessibility and SEO.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+
+                <article class="blog-post">
+                    <h2>The Power of CSS</h2>
+                    <p class="post-meta">Posted by <strong>Admin</strong> on November 12, 2025</p>
+                    <p>CSS (Cascading Style Sheets) is what makes the website look good. Without the <code>&lt;style&gt;</code> block in the head of this document, this page would just be black text on a white background. CSS handles layout, colors, fonts, and more.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+
+            </main>
+
+            <aside class="sidebar">
+                
+                <div class="sidebar-widget">
+                    <h3>About Me</h3>
+                    <p>Welcome to my blog! I write about web development, technology, and learning new things. Follow along!</p>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>Recent Posts</h3>
+                    <ul>
+                        <li><a href="#">My First Blog Post</a></li>
+                        <li><a href="#">Understanding HTML</a></li>
+                        <li><a href="#">The Power of CSS</a></li>
+                    </ul>
+                </div>
+
+            </aside>
+        </div>
+
+        <footer class="main-footer">
+            <p>&copy; 2025 My Basic Blog. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
